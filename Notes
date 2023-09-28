@@ -1,0 +1,33 @@
+CSS
+  CSS doesn't allow u to access element using text
+  attribute    tagname[attribute='value']
+  SHORTCUTS
+  id           tagname#value
+  class        tagname.value   if there is a space in the class u replace that space with a dot
+  contains     tagname[atribute*='value'] whenever an attribute has digits or spaces we can use it to avoid locator getting redundant
+  starts-with  tagname[attribute^='value']
+  Ends-with    tagname[attribute$='value']
+
+
+Radio Buttons       U can only select one option
+hey select your age range
+0-5     5-15     15-30     30-100
+radio button 15-30
+1.locate the desired radio button (locator of our own choice)
+2.click on it
+
+male female
+webElement commands:
+isSelected()--->weather the element is selected or not - boolean
+isEnable()--->if the element is active or not -boolean
+isDisplayed()-->if the element is visible on screen or not -boolean
+
+0-5   5-15   15-20   20-90
+1.find the button 20-90
+2.click on it
+Better solution:
+1.get all the radio buttons
+2.get them in a list
+3.loop through the list check each radio button
+     1.if it is your desired click on it
+     2.if not continue with the loop
